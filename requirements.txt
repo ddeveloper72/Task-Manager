@@ -17,7 +17,6 @@ numpy==1.8.2
 pycurl==7.19.3
 pymongo==3.7.1
 pyparsing==2.0.1
-python-dateutil==2.0
 pytz==2012c
 requests==2.2.1
 scipy==0.13.3
