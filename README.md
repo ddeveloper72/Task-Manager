@@ -86,7 +86,7 @@ task is complete.
 
 ![Adding a Date](https://github.com/ddeveloper72/Task-Manager/blob/master/static/images/TaskManagerCalTask.PNG "Fig 3 showing Adding a Date")
 
-![Adding Categories](https://github.com/ddeveloper72/Task-Manager/blob/master/static/images/TaskManagerAddCategories.PNG "Fig 3 showing Adding Categories")
+![Adding Categories](https://github.com/ddeveloper72/Task-Manager/blob/master/static/images/TaskManagerAddCategories.PNG "Fig 4 showing Adding Categories")
 
 
 So lets note down some steps that we will flesh out:
@@ -158,8 +158,7 @@ Get, Add & Insert deal with the database that has all the different task ids.
 They are not id specific. Add for instance, tells the database to add a new object and 
 when that happens, the database server gives that new object a unique id.
 
-![A look at the tasks on mLab](https://github.com/ddeveloper72/Task-Manager/blob/static/master/images/mLabTasks.PNG "Fig 4 showing Tasks on mLab")
-
+![A look at the tasks on mLab](https://github.com/ddeveloper72/Task-Manager/blob/master/static/images/mLabTasks.PNG "Fig 5 showing Tasks on mLab")
 
 
 ### Categories -  Our second Boilerplate template made on mLab
@@ -212,4 +211,4 @@ the database to create a new category in the form of a dictionary.
 @app.route('/new_category')
 ```
 
-![A look at the categories on mLab](https://github.com/ddeveloper72/Task-Manager/blob/master/static/images/mLabCategories.PNG "Fig 5 showing Categories on mLab")
+![A look at the categories on mLab](https://github.com/ddeveloper72/Task-Manager/blob/master/static/images/mLabCategories.PNG "Fig 6 showing Categories on mLab")
