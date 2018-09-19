@@ -61,7 +61,7 @@ from bson.objectid import ObjectId
 ```python
 app = Flask(__name__)
 app.config["MONGO_DBNAME"] = 'task_manager'
-app.config["MONGO_URI"] = 'mongodb://root:dandn72@ds155352.mlab.com:55352/task_manager'
+app.config["MONGO_URI"] = mongodb://<dbuser>:<dbpassword>@ds155352.mlab.com:55352/task_manager
 ```
 
 
@@ -80,13 +80,13 @@ Well here's our list of things that any good taks manager would let us do:
 6 Lastly we ahve to be able to delete information when a mistake is made or a
 task is complete.
 
-![Task Manager](https://github.com/ddeveloper72/Task-Manager/blob/master/images/TaskManagerDesk.PNG "Fig 1 showing Task Manager")
+![Task Manager](https://github.com/ddeveloper72/Task-Manager/blob/master/static/images/TaskManagerDesk.PNG "Fig 1 showing Task Manager")
 
-![Adding a Task](https://github.com/ddeveloper72/Task-Manager/blob/master/images/TaskManagerAddTask.PNG "Fig 2 showing Adding a Task")
+![Adding a Task](https://github.com/ddeveloper72/Task-Manager/blob/master/static/images/TaskManagerAddTask.PNG "Fig 2 showing Adding a Task")
 
-![Adding a Date](https://github.com/ddeveloper72/Task-Manager/blob/master/images/TaskManagerCalTask.PNG "Fig 3 showing Adding a Date")
+![Adding a Date](https://github.com/ddeveloper72/Task-Manager/blob/master/static/images/TaskManagerCalTask.PNG "Fig 3 showing Adding a Date")
 
-![Adding Categories](https://github.com/ddeveloper72/Task-Manager/blob/master/images/TaskManagerAddCategories.PNG "Fig 3 showing Adding Categories")
+![Adding Categories](https://github.com/ddeveloper72/Task-Manager/blob/master/static/images/TaskManagerAddCategories.PNG "Fig 3 showing Adding Categories")
 
 
 So lets note down some steps that we will flesh out:
@@ -158,7 +158,7 @@ Get, Add & Insert deal with the database that has all the different task ids.
 They are not id specific. Add for instance, tells the database to add a new object and 
 when that happens, the database server gives that new object a unique id.
 
-![A look at the tasks on mLab](https://github.com/ddeveloper72/Task-Manager/blob/master/images/mLabTasks.PNG "Fig 4 showing Tasks on mLab")
+![A look at the tasks on mLab](https://github.com/ddeveloper72/Task-Manager/blob/static/master/images/mLabTasks.PNG "Fig 4 showing Tasks on mLab")
 
 
 
@@ -212,4 +212,4 @@ the database to create a new category in the form of a dictionary.
 @app.route('/new_category')
 ```
 
-![A look at the categories on mLab](https://github.com/ddeveloper72/Task-Manager/blob/master/images/mLabCategories.PNG "Fig 5 showing Categories on mLab")
+![A look at the categories on mLab](https://github.com/ddeveloper72/Task-Manager/blob/master/static/images/mLabCategories.PNG "Fig 5 showing Categories on mLab")
