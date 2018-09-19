@@ -1,6 +1,3 @@
-
-# WORK IN PROGRESS
-
 # [Task-Manager](https://ddeveloper72-taskmanager.herokuapp.com/)
 # How Python Talks to Data in...
 # The Mini-Walk Through Project
@@ -37,16 +34,16 @@ The Learning Outcomes Are:
 
    * Build helper functions that will allow us to use a command line menu to:
    
-       1. Add a record
-       2. Find a record by name
-       3. Edit a record
-       4. Delete a record
-       5. Exit the program
+    1. Add a record
+    2. Find a record by name
+    3. Edit a record
+    4. Delete a record
+    5. Exit the program
 
 5 Create a task manager, built using Flask, MongoDB and a front-end framework
 called Materialize
 
-## Setting up the Pythonm Flask app:
+## Setting up the Python Flask app:
 **(Code Institute Tutorial)**
 
 
