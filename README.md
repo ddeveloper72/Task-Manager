@@ -33,14 +33,14 @@ The Learning Outcomes Are:
 4 Create a task manager, built using Flask, MongoDB and a front-end framework
 called Materialize
 
-   * Build helper functions that will allow us to use a command line menu to:
+   * Build helper functions that will allow us to use a a webpage with forms to:
    
-    1. New Task
-    2. Edit Task
-    3. Delete Task
-    4. New Category
-    5. Edit Category
-    6. Delete Category
+    1. Add a New Task
+    2. Edit aTask
+    3. Delete a Task
+    4. Add a New Category
+    5. Edit a Category
+    6. Delete a Category
 
 
 ## Setting up the Python Flask app:
