@@ -36,7 +36,7 @@ called Materialize
    * Build helper functions that will allow us to use a a webpage with forms to:
    
     1. Add a New Task
-    2. Edit aTask
+    2. Edit a Task
     3. Delete a Task
     4. Add a New Category
     5. Edit a Category
@@ -59,9 +59,11 @@ from bson.objectid import ObjectId
 2 To connect using a driver via the standard MongoDB URI:
 
 ```python
+# To run locally, use app.config = os.getenv('MONGO_URI', 'mongodb://<username>:
+<password>@ds155352.mlab.com:55352/task_manager') 
 app = Flask(__name__)
 app.config["MONGO_DBNAME"] = 'task_manager'
-app.config["MONGO_URI"] = mongodb://<dbuser>:<dbpassword>@ds155352.mlab.com:55352/task_manager
+app.config["MONGO_URI"] = os.getenv('MONGO_URI')
 ```
 
 

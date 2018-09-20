@@ -3,11 +3,11 @@ from flask import Flask, render_template, redirect, request, url_for
 from flask_pymongo import PyMongo
 from bson.objectid import ObjectId
 from bson.objectid import ObjectId
-from mlab import auth
 
+# To run locally, use app.config = os.getenv('MONGO_URI', 'mongodb://<username>:<password>@ds155352.mlab.com:55352/task_manager') 
 app = Flask(__name__)
 app.config["MONGO_DBNAME"] = 'task_manager'
-auth = auth()
+app.config["MONGO_URI"] = os.getenv('MONGO_URI')
 
 mongo = PyMongo(app)
 
@@ -102,4 +102,4 @@ def new_category():
 if __name__ == '__main__':
     app.run(host = os.environ.get('IP'),
         port=int(os.environ.get('PORT')),
-        debug = False)
+        debug = True)
