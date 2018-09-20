@@ -1,7 +1,7 @@
 # [Task-Manager](https://ddeveloper72-taskmanager.herokuapp.com/)
-# How Python Talks to Data in...
-# The Mini-Walk Through Project
-# A part of Data Centric Development
+## How Python Talks to Data in...
+## The Mini-Walk Through Project
+#### *A part of Data Centric Development*
 
 
 Welcome to my Python project on Cloud9 IDE!  Yes I've taken over the default Readme
@@ -30,18 +30,18 @@ The Learning Outcomes Are:
 
    * Connect using a driver via the standard MongoDB URI
     
-4 Create a menu driven database system.
+4 Create a task manager, built using Flask, MongoDB and a front-end framework
+called Materialize
 
    * Build helper functions that will allow us to use a command line menu to:
    
-    1. Add a record
-    2. Find a record by name
-    3. Edit a record
-    4. Delete a record
-    5. Exit the program
+    1. New Task
+    2. Edit Task
+    3. Delete Task
+    4. New Category
+    5. Edit Category
+    6. Delete Category
 
-5 Create a task manager, built using Flask, MongoDB and a front-end framework
-called Materialize
 
 ## Setting up the Python Flask app:
 **(Code Institute Tutorial)**
