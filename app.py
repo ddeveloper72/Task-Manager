@@ -4,10 +4,14 @@ from flask_pymongo import PyMongo
 from bson.objectid import ObjectId
 from bson.objectid import ObjectId
 
+# import environmental variables from external env.py
+if os.path.exists('env.py'):
+    import env
+
 # To run locally, use app.config = os.getenv('MONGO_URI', 'mongodb://<username>:<password>@ds155352.mlab.com:55352/task_manager') 
 app = Flask(__name__)
 app.config["MONGO_DBNAME"] = 'task_manager'
-app.config["MONGO_URI"] = os.getenv('MONGO_URI')
+app.config["MONGO_URI"] = os.environ.get('MONGO_URI')
 
 mongo = PyMongo(app)
 
@@ -100,6 +104,17 @@ def new_category():
 
 
 if __name__ == '__main__':
-    app.run(host = os.environ.get('IP'),
-        port=int(os.environ.get('PORT')),
-        debug = True)
+    
+    # assign a port ID works with Vscode
+   
+    app.run(host=os.getenv('IP'),
+        port=os.getenv('PORT'),
+        # debug set to true to help during development
+        debug=True)
+
+""" if __name__ == '__main__':
+    # Cloud 9 Environmental variables
+    app.run(host=os.environ.get('IP'),
+    port=int(os.environ.get('PORT')),
+    # debug set to true to help during development
+    debug=True) """
