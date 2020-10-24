@@ -1,2 +1,7 @@
 ex50/*
 mlab.py
+.venv
+*.code-workspace
+env.py
+.env
+.vscode/settings.json
